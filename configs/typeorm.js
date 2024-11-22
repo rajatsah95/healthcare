@@ -1,4 +1,5 @@
 let { DataSource } = require("typeorm");
+const { userModel } = require("../models/user.model");
 
 let AppDataSource = new DataSource({
   type: "mysql",
@@ -9,7 +10,7 @@ let AppDataSource = new DataSource({
   database: "e3",
   synchronize: true,
   logging: false,
-  entities: [],
+  entities: [userModel],
 });
 
 module.exports = { AppDataSource };

@@ -23,7 +23,7 @@ let userModel=new EntitySchema({
         },
         password:{
             type:"varchar",
-            length:24,
+            length:400,
             nullable:false,
         },
         role:

@@ -1,13 +1,14 @@
 let bcrypt=require("bcryptjs")
 let jwt=require("jsonwebtoken")
 let secretKey="secretKey"
-const { userModel } = require("../models/user.model")
-
+const { userModel } = require("../models/user.model");
+const { AppDataSource } = require("../configs/typeorm");
+const UserTable =  AppDataSource.getRepository(userModel);
 let userLogin=async(req,res)=>
 {
 try{
 let {email,password}=req.body
-let user=await userModel.findOneBy({email})
+let user=await UserTable.findOneBy({email})
 if(!user)
 {
     return res.status(400).json({message:"invalid credentials"})
