@@ -1,0 +1,36 @@
+{
+"doctors":[
+    { "name": "Dr. Smith", "specialization": "Cardiologist", "availability": true },
+    { "name": "Dr. Jane Doe", "specialization": "Dermatologist", "availability": false },
+    { "name": "Dr. Brown", "specialization": "Pediatrician", "availability": true }
+  ],
+
+  "patients":[
+    { "name": "John Doe", "age": 30, "email": "john.doe@example.com" },
+    { "name": "Sarah Connor", "age": 25, "email": "sarah.connor@example.com" },
+    { "name": "Michael Scott", "age": 45, "email": "michael.scott@example.com" }
+  ],
+
+
+  "appointments":[
+    {
+      "patientName": "John Doe",
+      "doctorName": "Dr. Smith",
+      "appointmentTime": "2024-10-12 10:00",
+      "reason": "Routine Checkup"
+    },
+    {
+      "patientName": "Sarah Connor",
+      "doctorName": "Dr. Brown",
+      "appointmentTime": "2024-10-15 15:30",
+      "reason": "Pediatric Consultation"
+    },
+    {
+      "patientName": "Michael Scott",
+      "doctorName": "Dr. Jane Doe",
+      "appointmentTime": "2024-10-20 09:00",
+      "reason": "Dermatology Follow-up"
+    }
+  ]
+
+}
